@@ -7,11 +7,25 @@ public class InterceptionAspect : IInterceptor
 {
     public void Intercept(IInvocation invocation)
     {
-        Console.WriteLine($"TargetType {invocation.TargetType}");
-        Console.WriteLine($"OnBefore {invocation.Method.Name}");
+        Console.WriteLine($"Proxy      : {invocation.Proxy}");
+        Console.WriteLine($"TargetType : {invocation.TargetType}");
+
+        if (invocation.Arguments.Any())
+        {
+            Console.WriteLine();
+            Console.WriteLine("ARGUMENTS  -->");
+            foreach (var arg in invocation.Arguments)
+            {
+                Console.WriteLine($"   Type       : {arg.GetType()}");
+                Console.WriteLine($"     Argument : {arg}");
+            }
+        }
+
+        Console.WriteLine();
+        Console.WriteLine($"OnBefore   : {invocation.Method.Name}");
 
         invocation.Proceed();
 
-        Console.WriteLine($"OnAfter {invocation.Method.Name}");
+        Console.WriteLine($"OnAfter    : {invocation.Method.Name}");
     }
 }

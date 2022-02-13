@@ -30,6 +30,6 @@ public class WeatherService : IWeatherService
 
     public virtual void TestMethod()
     {
-        Console.WriteLine("Test OK");
+        Console.WriteLine("Method runs : Test OK");
     }
 }
