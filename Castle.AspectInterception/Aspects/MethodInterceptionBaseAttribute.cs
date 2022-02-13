@@ -1,7 +1,7 @@
 ﻿using Castle.DynamicProxy;
 
 
-namespace Castle.AspectInterceptorSelector.Aspects;
+namespace Castle.AspectInterception.Aspects;
 
 [AttributeUsage(AttributeTargets.Class |
                 AttributeTargets.Method, AllowMultiple = true, Inherited = true)]

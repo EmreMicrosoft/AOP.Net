@@ -1,4 +1,4 @@
-namespace Castle.AspectInterceptorSelector;
+namespace Castle.AspectInterception;
 
 public class Model
 {

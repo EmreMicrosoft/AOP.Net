@@ -1,5 +1,5 @@
-using Castle.AspectInterceptorSelector.Aspects;
-using Castle.AspectInterceptorSelector.Proxy;
+using Castle.AspectInterception.Aspects;
+using Castle.AspectInterception.Proxy;
 using Castle.DynamicProxy;
 
 
@@ -16,3 +16,6 @@ var aspect = proxy.CreateClassProxy<WeatherService>(
     });
 
 aspect.TestMethod();
+
+var app = builder.Build();
+app.Run();

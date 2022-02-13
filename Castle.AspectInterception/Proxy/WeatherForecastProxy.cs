@@ -1,4 +1,4 @@
-﻿namespace Castle.AspectInterceptorSelector.Proxy;
+﻿namespace Castle.AspectInterception.Proxy;
 
 public class WeatherForecastProxy : IWeatherService
 {

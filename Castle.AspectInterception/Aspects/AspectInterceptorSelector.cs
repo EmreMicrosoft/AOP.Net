@@ -1,7 +1,7 @@
 ﻿//using System.Reflection;
 //using Castle.DynamicProxy;
 
-//namespace Castle.AspectInterceptorSelector.Aspects;
+//namespace Castle.AspectInterception.Aspects;
 
 //public class AspectInterceptorSelector : IInterceptorSelector
 //{

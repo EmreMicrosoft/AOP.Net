@@ -1,7 +1,7 @@
 ﻿using Castle.DynamicProxy;
 
 
-namespace Castle.AspectInterceptorSelector.Aspects;
+namespace Castle.AspectInterception.Aspects;
 
 public class InterceptionAspect : IInterceptor
 {
@@ -16,8 +16,7 @@ public class InterceptionAspect : IInterceptor
             Console.WriteLine("ARGUMENTS  -->");
             foreach (var arg in invocation.Arguments)
             {
-                Console.WriteLine($"   Type       : {arg.GetType()}");
-                Console.WriteLine($"     Argument : {arg}");
+                Console.WriteLine($"  Type : {arg.GetType()} | {arg}");
             }
         }
 
