@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostSharp.WeatherForecast", "PostSharp.WeatherForecast\PostSharp.WeatherForecast.csproj", "{7B2712D7-8DB3-4525-86DD-C72DBD53F628}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostSharp.WeatherForecast", "PostSharp.WeatherForecast\PostSharp.WeatherForecast.csproj", "{7B2712D7-8DB3-4525-86DD-C72DBD53F628}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.WeatherForecast", "Microsoft.WeatherForecast\Microsoft.WeatherForecast.csproj", "{7E033A79-81FB-4EB4-91D3-B6FF9FDA5AD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WeatherForecast", "Microsoft.WeatherForecast\Microsoft.WeatherForecast.csproj", "{7E033A79-81FB-4EB4-91D3-B6FF9FDA5AD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.AspectInterceptorSelector", "Castle.AspectInterceptorSelector\Castle.AspectInterceptorSelector.csproj", "{25172EEE-DEDB-4FEE-A4A8-D3A1B8DF7911}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{7E033A79-81FB-4EB4-91D3-B6FF9FDA5AD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E033A79-81FB-4EB4-91D3-B6FF9FDA5AD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E033A79-81FB-4EB4-91D3-B6FF9FDA5AD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25172EEE-DEDB-4FEE-A4A8-D3A1B8DF7911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25172EEE-DEDB-4FEE-A4A8-D3A1B8DF7911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25172EEE-DEDB-4FEE-A4A8-D3A1B8DF7911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25172EEE-DEDB-4FEE-A4A8-D3A1B8DF7911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
