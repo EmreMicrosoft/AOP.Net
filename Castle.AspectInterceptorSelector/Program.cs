@@ -1,4 +1,6 @@
+using Castle.AspectInterceptorSelector.Aspects;
 using Castle.AspectInterceptorSelector.Services;
+using Castle.DynamicProxy;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,17 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IWeatherService, WeatherService>();
+
+
+var proxy = new ProxyGenerator();
+var aspect = proxy.CreateClassProxy<WeatherService>(
+    new IInterceptor[]
+    {
+        new InterceptionAspect(),
+    });
+
+aspect.TestAspect();
+
 
 
 var app = builder.Build();
