@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using PostSharp.WeatherForecast.Services;
+using Microsoft.WeatherForecast.Aspects;
+using Microsoft.WeatherForecast.Services;
 
 
 namespace Microsoft.WeatherForecast.Controllers;
@@ -13,7 +14,7 @@ public class WeatherForecastController : ApiController
     }
 
 
-    [HttpGet(Name = "GetWeatherForecast")]
+    [LoggingAspect, HttpGet(Name = "GetWeatherForecast")]
     public async Task<ActionResult> Get()
     {
         return Ok(await _weatherService.GetWeatherAsync());

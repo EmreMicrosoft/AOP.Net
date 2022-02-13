@@ -1,5 +1,6 @@
 ﻿using PostSharp.WeatherForecast.Aspects;
 
+
 namespace PostSharp.WeatherForecast.Services;
 
 public class WeatherService : IWeatherService

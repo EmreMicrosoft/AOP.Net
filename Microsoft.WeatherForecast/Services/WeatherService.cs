@@ -1,4 +1,6 @@
-﻿namespace Microsoft.WeatherForecast.Services;
+﻿using Microsoft.WeatherForecast.Aspects;
+
+namespace Microsoft.WeatherForecast.Services;
 
 public class WeatherService : IWeatherService
 {
