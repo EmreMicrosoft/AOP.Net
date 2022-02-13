@@ -7,10 +7,11 @@ public class InterceptionAspect : IInterceptor
 {
     public void Intercept(IInvocation invocation)
     {
-        Console.WriteLine("OnBefore (InterceptionAspect.cs)");
+        Console.WriteLine($"TargetType {invocation.TargetType}");
+        Console.WriteLine($"OnBefore {invocation.Method.Name}");
 
         invocation.Proceed();
 
-        Console.WriteLine("OnAfter (InterceptionAspect.cs)");
+        Console.WriteLine($"OnAfter {invocation.Method.Name}");
     }
 }

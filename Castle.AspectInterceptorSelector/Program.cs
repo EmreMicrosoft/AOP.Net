@@ -19,7 +19,7 @@ var aspect = proxy.CreateClassProxy<WeatherService>(
         new InterceptionAspect(),
     });
 
-aspect.TestAspect();
+aspect.TestMethod();
 
 
 

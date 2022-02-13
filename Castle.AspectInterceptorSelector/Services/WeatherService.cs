@@ -28,7 +28,7 @@ public class WeatherService : IWeatherService
         "Scorching"
     };
 
-    public virtual void TestAspect()
+    public virtual void TestMethod()
     {
         Console.WriteLine("Test OK");
     }
