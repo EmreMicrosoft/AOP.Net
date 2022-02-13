@@ -1,6 +1,6 @@
 namespace Castle.AspectInterceptorSelector;
 
-public class WeatherForecast
+public class Model
 {
     public DateTime Date { get; set; }
     public int TemperatureC { get; set; }

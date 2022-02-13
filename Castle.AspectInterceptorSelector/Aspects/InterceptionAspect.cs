@@ -22,7 +22,7 @@ public class InterceptionAspect : IInterceptor
         }
 
         Console.WriteLine();
-        Console.WriteLine($"OnBefore   : {invocation.Method.Name}");
+        Console.WriteLine($"OnBefore   : {invocation.Method}");
 
         invocation.Proceed();
 

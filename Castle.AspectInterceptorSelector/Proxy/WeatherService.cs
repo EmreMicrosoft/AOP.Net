@@ -1,10 +1,10 @@
-﻿namespace Castle.AspectInterceptorSelector.Services;
+﻿namespace Castle.AspectInterceptorSelector.Proxy;
 
 public class WeatherService : IWeatherService
 {
-    public IEnumerable<WeatherForecast> GetWeather()
+    public IEnumerable<Model> GetWeather()
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        return Enumerable.Range(1, 5).Select(index => new Model
         {
             Date = DateTime.Now.AddDays(index),
             TemperatureC = Random.Shared.Next(-20, 55),
