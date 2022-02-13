@@ -1,10 +1,7 @@
-﻿using PostSharp.WeatherForecast.Aspects;
-
-namespace PostSharp.WeatherForecast.Services;
+﻿namespace Microsoft.WeatherForecast.Services;
 
 public class WeatherService : IWeatherService
 {
-    [LoggingAspect]
     public async Task<IEnumerable<WeatherForecast>> GetWeatherAsync()
     {
         var weather = Enumerable.Range(1, 5).Select(index => new WeatherForecast
