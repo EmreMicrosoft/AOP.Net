@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostSharp.WeatherForecast",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.WeatherForecast", "Microsoft.WeatherForecast\Microsoft.WeatherForecast.csproj", "{7E033A79-81FB-4EB4-91D3-B6FF9FDA5AD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Castle.AspectInterception", "Castle.AspectInterception\Castle.AspectInterception.csproj", "{B5CD41B9-68F9-4222-BEC7-CE8955CCB4A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autofac.AspectInterception", "Autofac.AspectInterception\Autofac.AspectInterception.csproj", "{B5CD41B9-68F9-4222-BEC7-CE8955CCB4A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,16 +1,16 @@
-﻿using Castle.AspectInterception.CrossCutting.Interceptors;
+﻿using Autofac.AspectInterception.CrossCutting.Interceptors;
 using Castle.DynamicProxy;
 
 
-namespace Castle.AspectInterception.Aspects;
+namespace Autofac.AspectInterception.Aspects;
 
 public class InterceptionAspect : MethodInterceptor
 {
     public override void OnBefore(IInvocation invocation)
     {
-        Console.WriteLine($"OnBefore   : {invocation.Method}");
-        Console.WriteLine($"Proxy      : {invocation.Proxy}");
-        Console.WriteLine($"TargetType : {invocation.TargetType}");
+        Console.WriteLine($"OnBefore      : {invocation.Method}");
+        Console.WriteLine($"Proxy         : {invocation.Proxy}");
+        Console.WriteLine($"TargetType    : {invocation.TargetType}");
 
         if (!invocation.Arguments.Any())
             return;
@@ -26,7 +26,7 @@ public class InterceptionAspect : MethodInterceptor
 
     public override void OnAfter(IInvocation invocation)
     {
-        Console.WriteLine($"OnAfter    : {invocation.Method.Name}");
+        Console.WriteLine($"OnAfter       : {invocation.Method.Name}");
         Console.WriteLine();
     }
 }

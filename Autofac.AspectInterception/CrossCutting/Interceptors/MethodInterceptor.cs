@@ -1,11 +1,11 @@
 ﻿using Castle.DynamicProxy;
 
 
-namespace Castle.AspectInterception.CrossCutting.Interceptors;
+namespace Autofac.AspectInterception.CrossCutting.Interceptors;
 
 public class MethodInterceptor : MethodInterceptorAttribute
 {
-    public override void InterceptSynchronous(IInvocation invocation)
+    public override void Intercept(IInvocation invocation)
     {
         var success = true;
         OnBefore(invocation);
@@ -15,7 +15,7 @@ public class MethodInterceptor : MethodInterceptorAttribute
         {
             success = false;
             OnException(invocation, ex);
-            //throw;
+            throw;
         }
         finally
         {
