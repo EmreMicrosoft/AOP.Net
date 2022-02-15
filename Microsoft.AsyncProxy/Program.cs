@@ -1,5 +1,6 @@
 using Microsoft.AsyncProxy.Services;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
