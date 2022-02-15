@@ -2,7 +2,7 @@
 using Microsoft.DispatchProxy.Services;
 
 
-namespace Microsoft.DispatchProxy.Utilities.Decorators;
+namespace Microsoft.DispatchProxy;
 
 public class WeatherDecorator : IWeatherService
 {

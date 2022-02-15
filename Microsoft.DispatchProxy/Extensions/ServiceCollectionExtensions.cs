@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 
 
-namespace Microsoft.DispatchProxy.Utilities.Extensions;
+namespace Microsoft.DispatchProxy.Extensions;
 
 public static class ServiceCollectionExtensions
 {

@@ -1,15 +1,14 @@
-using Microsoft.DispatchProxy.Proxies;
+using Microsoft.DispatchProxy;
+using Microsoft.DispatchProxy.Extensions;
 using Microsoft.DispatchProxy.Services;
-using Microsoft.DispatchProxy.Utilities.Extensions;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 builder.Services.AddScoped<IWeatherService, WeatherService>();
 
@@ -20,12 +19,8 @@ builder.Services
         configure.SetMinimumLevel(LogLevel.Information);
     });
 
-
 builder.Services.DecorateWithDispatchProxy<IWeatherService,
     WeatherProxy<IWeatherService>>();
-
-//builder.Services.DecorateWithDispatchProxy<IWeatherService,
-//    CacheProxy<IWeatherService>>();
 
 
 

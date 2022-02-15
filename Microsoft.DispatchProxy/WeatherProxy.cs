@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 
 
-namespace Microsoft.DispatchProxy.Proxies;
+namespace Microsoft.DispatchProxy;
 
 public class WeatherProxy<TDecorated>
     : System.Reflection.DispatchProxy
