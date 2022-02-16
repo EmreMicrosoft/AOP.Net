@@ -1,7 +1,7 @@
-﻿using Microsoft.AsyncProxy.Models;
+﻿using Microsoft.AspectCore.Models;
 
 
-namespace Microsoft.AsyncProxy.Services;
+namespace Microsoft.AspectCore.Services;
 
 public class WeatherService : IWeatherService
 {
@@ -15,7 +15,7 @@ public class WeatherService : IWeatherService
         })
         .ToArray();
 
-        await Task.Delay(Random.Shared.Next(40, 400));
+        await Task.Delay(Random.Shared.Next(10, 20));
         return weather;
     }
 

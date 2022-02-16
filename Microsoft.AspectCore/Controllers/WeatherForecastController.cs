@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AsyncProxy.Models;
-using Microsoft.AsyncProxy.Services;
+using Microsoft.AspectCore.Models;
+using Microsoft.AspectCore.Services;
 
 
-namespace Microsoft.AsyncProxy.Controllers;
+namespace Microsoft.AspectCore.Controllers;
 
 public class WeatherForecastController : ApiController
 {
@@ -12,7 +12,6 @@ public class WeatherForecastController : ApiController
     {
         _weatherService = weatherService;
     }
-
 
     [HttpGet(Name = "GetWeatherForecast")]
     public async Task<ActionResult<IEnumerable<WeatherModel>>> Get()

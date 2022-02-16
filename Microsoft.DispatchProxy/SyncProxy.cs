@@ -1,8 +1,9 @@
 ﻿using System.Reflection;
 
-namespace Microsoft.AsyncProxy;
+namespace Microsoft.DispatchProxy;
 
-public class SyncProxy<T> : DispatchProxy
+// *** ANOTHER WORKSHOP ***
+public class SyncProxy<T> : System.Reflection.DispatchProxy
 {
     private T _decorated;
 

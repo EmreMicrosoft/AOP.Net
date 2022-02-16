@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Microsoft.AsyncProxy": {
+    "Microsoft.AspectCore": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
