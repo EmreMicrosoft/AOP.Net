@@ -1,5 +1,12 @@
+using Microsoft.AsyncProxy;
 using Microsoft.AsyncProxy.Services;
 
+
+// *** THIS REPOSITORY IS NOT READY YET ***
+// *** THIS REPOSITORY IS NOT READY YET ***
+// *** THIS REPOSITORY IS NOT READY YET ***
+// *** THIS REPOSITORY IS NOT READY YET ***
+// *** THIS REPOSITORY IS NOT READY YET ***
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +17,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IWeatherService, WeatherService>();
 
+var proxy = AsyncProxy<IWeatherService>
+    .Create(new WeatherService());
 
 var app = builder.Build();
 

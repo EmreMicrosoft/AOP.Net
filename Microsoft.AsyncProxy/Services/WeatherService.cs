@@ -1,10 +1,13 @@
-﻿namespace Microsoft.AsyncProxy.Services;
+﻿using Microsoft.AsyncProxy.Models;
+
+
+namespace Microsoft.AsyncProxy.Services;
 
 public class WeatherService : IWeatherService
 {
-    public async Task<IEnumerable<WeatherForecast>> GetWeatherAsync()
+    public async Task<IEnumerable<WeatherModel>> GetWeatherAsync()
     {
-        var weather = Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        var weather = Enumerable.Range(1, 5).Select(index => new WeatherModel
         {
             Date = DateTime.Now.AddDays(index),
             TemperatureC = Random.Shared.Next(-20, 55),
