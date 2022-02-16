@@ -1,7 +1,7 @@
 ﻿using AspectCore.DynamicProxy;
 
 
-namespace Microsoft.AspectCore.Attributes;
+namespace DotNetCore.AspectCore.Attributes;
 
 public class LoggerAttribute : AbstractInterceptorAttribute
 {

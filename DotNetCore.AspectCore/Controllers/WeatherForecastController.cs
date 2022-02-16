@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspectCore.Models;
-using Microsoft.AspectCore.Services;
+using DotNetCore.AspectCore.Models;
+using DotNetCore.AspectCore.Services;
 
 
-namespace Microsoft.AspectCore.Controllers;
+namespace DotNetCore.AspectCore.Controllers;
 
 public class WeatherForecastController : ApiController
 {

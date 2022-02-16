@@ -3,8 +3,8 @@
 using AspectCore.Configuration;
 using AspectCore.Extensions.DependencyInjection;
 
-using Microsoft.AspectCore.Attributes;
-using Microsoft.AspectCore.Services;
+using DotNetCore.AspectCore.Attributes;
+using DotNetCore.AspectCore.Services;
 
 
 var builder = WebApplication.CreateBuilder(args);

@@ -1,7 +1,7 @@
-﻿using Microsoft.AspectCore.Models;
+﻿using DotNetCore.AspectCore.Models;
 
 
-namespace Microsoft.AspectCore.Services;
+namespace DotNetCore.AspectCore.Services;
 
 public class WeatherService : IWeatherService
 {

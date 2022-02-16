@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autofac.AspectInterception"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.DispatchProxy", "Microsoft.DispatchProxy\Microsoft.DispatchProxy.csproj", "{E497E3BB-17BF-493F-AC34-9B81B1A64C74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.AspectCore", "Microsoft.AspectCore\Microsoft.AspectCore.csproj", "{9A5D6561-8C95-4040-A261-69C7F068C650}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.AspectCore", "DotNetCore.AspectCore\DotNetCore.AspectCore.csproj", "{9A5D6561-8C95-4040-A261-69C7F068C650}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

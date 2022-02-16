@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
 
-namespace Microsoft.AspectCore.Controllers;
+namespace DotNetCore.AspectCore.Controllers;
 
 [ApiController, Route("api/[controller]")]
 public abstract class ApiController : ControllerBase { }

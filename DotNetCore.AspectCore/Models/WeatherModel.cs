@@ -1,4 +1,4 @@
-namespace Microsoft.AspectCore.Models;
+namespace DotNetCore.AspectCore.Models;
 
 public class WeatherModel
 {
