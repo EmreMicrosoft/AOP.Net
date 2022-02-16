@@ -17,7 +17,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IWeatherService, WeatherService>();
 
-var proxy = AsyncProxy<IWeatherService>
+var syncProxy = SyncProxy<IWeatherService>
     .Create(new WeatherService());
 
 var app = builder.Build();

@@ -2,7 +2,7 @@
 
 namespace Microsoft.AsyncProxy;
 
-public class AsyncProxy<T> : DispatchProxy
+public class SyncProxy<T> : DispatchProxy
 {
     private T _decorated;
 
@@ -16,18 +16,20 @@ public class AsyncProxy<T> : DispatchProxy
         Action<MethodInfo, object[], Exception> onException = null,
         Action<MethodInfo, object[], object> onAfter = null)
     {
-        object proxy = Create<T, AsyncProxy<T>>();
+        object proxy = Create<T, SyncProxy<T>>();
         SetParameters();
         return (T)proxy;
 
         void SetParameters()
         {
-            var proxyT = ((AsyncProxy<T>)proxy);
+            var proxyT = ((SyncProxy<T>)proxy);
+
             proxyT._decorated = decorated == null ?
                 throw new ArgumentNullException(nameof(decorated)) : decorated;
+
             proxyT._onBefore = onBefore;
-            proxyT._onAfter = onAfter;
             proxyT._onException = onException;
+            proxyT._onAfter = onAfter;
         }
     }
 
