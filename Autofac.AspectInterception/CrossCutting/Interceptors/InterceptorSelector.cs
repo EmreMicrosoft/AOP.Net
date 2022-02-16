@@ -4,7 +4,7 @@ using Castle.DynamicProxy;
 
 namespace Autofac.AspectInterception.CrossCutting.Interceptors;
 
-public class AspectInterceptorSelector : IInterceptorSelector
+public class InterceptorSelector : IInterceptorSelector
 {
     public IInterceptor[] SelectInterceptors(Type type,
         MethodInfo method, IInterceptor[] interceptors)

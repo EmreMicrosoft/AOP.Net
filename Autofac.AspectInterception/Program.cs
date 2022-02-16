@@ -11,7 +11,7 @@ builder.RegisterType<TestService>()
     .As<ITestService>()
     .EnableInterfaceInterceptors(new ProxyGenerationOptions
     {
-        Selector = new AspectInterceptorSelector()
+        Selector = new InterceptorSelector()
     })
     .InstancePerDependency();
 
